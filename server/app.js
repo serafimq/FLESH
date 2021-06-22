@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const path = require('path')
 const cors = require('cors')
 
 
@@ -10,7 +11,7 @@ const dbConnect = require('./src/config/dbConnect');
 const app = express();
 const { PORT } = process.env
 
-
+app.use(express.static(path.resolve('../client/build')))
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

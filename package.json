@@ -1,0 +1,21 @@
+{
+  "name": "FLESH",
+  "version": "1.0.0",
+  "description": "Веб-приложение для флэш-карт. Мое приложение предоставляет пользователям возможность использования флэш-карты. Пользователь может выбрать колоду и сыграет партию с флэш-картами, а так же вносить свои варианты карт.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd client && npm i && npm run build",
+    "start": "cd server && npm i && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serafimq/FLESH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serafimq/FLESH/issues"
+  },
+  "homepage": "https://github.com/serafimq/FLESH#readme"
+}
