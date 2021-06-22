@@ -67,8 +67,6 @@ const userLogout = async (req, res) => {
     await activeUser.save()
 
     return res.json(activeUser)
-
-    return res.sendStatus(500)
   } catch (error) {
     return res.sendStatus(500)
   }
