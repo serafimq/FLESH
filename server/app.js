@@ -20,6 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 // подключаем роутеры
 app.use('/', indexRouter)
 app.use('/user', userRouter)
+
 app.get('*', (req, res) => {
   res.sendFile(path.resolve('../client/build/index.html'))
 })

@@ -23,11 +23,21 @@ function App() {
       <Router>
         <Navs />
         <Switch>
-          <Route exact path="/" render={() => <Main />} />
-          <Route exact path="/login" render={() => <Login />} />
-          <Route exact path="/register" render={() => <Register />} />
-          <Route exact path="/homepage" render={() => <Homepage />} />
-          <Route exact path="/Rick-and-Morty" render={() => <RickAndMorty />} />
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/register">
+            <Register />
+          </Route>
+          <Route exact path="/homepage">
+            <Homepage />
+          </Route>
+          <Route exact path="/Rick-and-Morty">
+            <RickAndMorty />
+          </Route>
+          <Route exact path="/">
+            <Main />
+          </Route>
         </Switch>
       </Router>
     </div >
