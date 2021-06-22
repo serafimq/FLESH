@@ -1,0 +1,13 @@
+const CREATE_USER = 'CREATE_USER'
+const SET_USER = 'SET_USER'
+const LOGOUT_USER = 'LOGOUT_USER'
+const ALL_USERS = 'ALL_USERS'
+const SET_ANSW = 'SET_ANSW'
+
+export {
+  CREATE_USER,
+  SET_USER,
+  LOGOUT_USER,
+  ALL_USERS,
+  SET_ANSW,
+}

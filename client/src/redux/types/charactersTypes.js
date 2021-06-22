@@ -1,0 +1,7 @@
+const SET_CHAR = 'SET_CHAR'
+const SET_CHAR_SAGA = 'SET_CHAR_SAGA'
+
+export {
+  SET_CHAR,
+  SET_CHAR_SAGA,
+}

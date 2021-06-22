@@ -1,0 +1,28 @@
+.category {
+  display: flex;
+  min-width: 100%
+}
+.activeCategory {
+  flex: 0 0 20%;
+  display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    justify-content: center;
+    margin: 3px;
+    align-items: center;
+    background: linear-gradient(315deg, rgb(29, 60, 124) 8%, rgb(67, 28, 13));
+    color: white;
+    border: none;
+}
+.span {
+  font-weight: 700;
+  font-size: 20px;
+}
+.questions {
+
+}

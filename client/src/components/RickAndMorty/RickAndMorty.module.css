@@ -1,0 +1,32 @@
+.box_card {
+  margin-top: 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(187, 147, 18);
+  width: 650px;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+padding-top: 50px;
+}
+
+.image {
+  margin: 20px;
+}
+.span {
+  color: rgb(33, 47, 109);
+  font-size: 35px;
+}
+
+.rundChar {
+  display: inline-block;
+  width: 100%;
+}

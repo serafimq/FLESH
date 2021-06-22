@@ -1,0 +1,11 @@
+.avatar {
+  width: 300px;
+}
+.card {
+  background: linear-gradient(315deg, rgb(29, 60, 124) 8%, rgb(67, 28, 13));
+    color: white;
+    border: none;
+    flex-direction: row;
+    margin: 15px;
+}
+
