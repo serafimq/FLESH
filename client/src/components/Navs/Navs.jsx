@@ -22,11 +22,11 @@ const Navs = () => {
   return (
     <>
         <Navbar className='ms-3 me-3' collapseOnSelect expand='lg' >
-          <Navbar.Brand className="logo text-white "><Link className='text-decoration-none' to="/">FLESH-CARDS</Link> </Navbar.Brand>
+          <Navbar.Brand className="logo text-white "><Link className='text-decoration-none' to="/main">FLESH-CARDS</Link> </Navbar.Brand>
           <Navbar.Toggle aria-controls='responsive-navbar-var'/>
           <Navbar.Collapse className={style.navbar} id='responsive-navbar-var'>
             <Nav className="mr-auto" >
-              <Nav.Link> <Link to="/">Main</Link> </Nav.Link>
+              <Nav.Link> <Link to="/main">Main</Link> </Nav.Link>
               <Nav.Link> <Link to="/Rick-and-Morty">Rick and Morty</Link></Nav.Link>
             </Nav>
 

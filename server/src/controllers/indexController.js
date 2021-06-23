@@ -3,6 +3,7 @@ const User = require('../models/users.model')
 
 const findQuestions = async (req, res) => {
   const posts = await Question.find({}, { answer: 0 })
+  console.log(posts);
   return res.json(posts);
 }
 
