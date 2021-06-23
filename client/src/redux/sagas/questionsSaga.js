@@ -5,20 +5,19 @@ import { ADD_QUEST_SAGA, SET_QUEST_SAGA } from '../types/questionTypes';
 
 
 const fechData = async () => {
-  const res = await axios('/')
+  const res = await axios('/main')
   console.log(res.data);
   return res.data
 }
 
 const fechNewQuest = async ({ question, id }) => {
-  const res = await axios.post('/', { question, id })
+  const res = await axios.post('/main', { question, id })
   return res.data
 }
 
 
 function* newQuestionsSagaWorker(action) {
   try {
-    console.log(action.payload);
     const newQuestionDataFromServer = yield call(fechNewQuest, action.payload);
     yield put(addQuestions(newQuestionDataFromServer));
   } catch (e) {

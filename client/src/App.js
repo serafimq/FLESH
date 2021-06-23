@@ -35,7 +35,7 @@ function App() {
           <Route exact path="/Rick-and-Morty">
             <RickAndMorty />
           </Route>
-          <Route exact path="/">
+          <Route exact path="/main">
             <Main />
           </Route>
         </Switch>
