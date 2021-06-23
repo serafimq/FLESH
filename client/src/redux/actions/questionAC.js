@@ -15,7 +15,7 @@ const setQuestions = (questions) => {
 
 const setUserQuestions = (userId) => async (dispatch) => {
 
-  const result = await axios.post('/main/homepage', { userId })
+  const result = await axios.post('/api/main/homepage', { userId })
   dispatch(userQuestions(result.data))
 }
 const userQuestions = (questions) => {

@@ -5,13 +5,13 @@ import { ADD_QUEST_SAGA, SET_QUEST_SAGA } from '../types/questionTypes';
 
 
 const fechData = async () => {
-  const res = await axios('/main')
+  const res = await axios('/api/main')
   console.log(res.data);
   return res.data
 }
 
 const fechNewQuest = async ({ question, id }) => {
-  const res = await axios.post('/main', { question, id })
+  const res = await axios.post('/api/main', { question, id })
   return res.data
 }
 

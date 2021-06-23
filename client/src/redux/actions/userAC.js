@@ -5,23 +5,23 @@ import { rightQuestion } from './questionAC'
 const showActivUser = () => async (dispatch) => {
   const activeUserId = JSON.parse(localStorage.getItem('Active user'))
   if (activeUserId) {
-    const result = await axios.post('/user/active', { activeUserId })
+    const result = await axios.post('/api/user/active', { activeUserId })
     dispatch(setUser(result.data))
     localStorage.setItem('Active user', JSON.stringify(result.data._id))
   } else {
-    const result = await axios('/user')
+    const result = await axios('/api/user')
     dispatch(allUsers(result.data))
   }
 }
 
 const createUser = (name, password) => async (dispatch) => {
-  const result = await axios.post('/user', { name, password })
+  const result = await axios.post('/api/user', { name, password })
   dispatch(setUser(result.data))
   localStorage.setItem('Active user', JSON.stringify(result.data._id))
 }
 
 const loginUser = (name, password) => async (dispatch) => {
-  const result = await axios.put('/user', { name, password })
+  const result = await axios.put('/api/user', { name, password })
   dispatch(setUser(result.data))
   localStorage.setItem('Active user', JSON.stringify(result.data._id))
 }
@@ -41,13 +41,13 @@ const setUser = (user) => {
 }
 
 const logoutUser = (user) => async (dispatch) => {
-  const result = await axios.patch('/user', { user })
+  const result = await axios.patch('/api/user', { user })
   dispatch(setUser({}))
 }
 
 const setActiveAnswer = (answer, questionId, userId) => async (dispatch) => {
 
-  const result = await axios.put('/main', {
+  const result = await axios.put('/api/main', {
     answer,
     questionId,
     userId,
