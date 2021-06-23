@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App" >
-      <Router>
+      {/* <Router>
         <Navs />
         <Switch>
           <Route exact path="/login">
@@ -39,7 +39,8 @@ function App() {
             <Main />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
+      privet
     </div >
   );
 }
