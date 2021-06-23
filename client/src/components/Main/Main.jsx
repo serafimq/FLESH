@@ -17,19 +17,37 @@ const Main = () => {
  
  const unicCategory = [...new Set(questions.map((q) => q.category))]
 
-  return (
-    <div className={style.container}>
-      {
-        unicCategory.map((category) => <Category 
-        key={Math.random() * 100} 
-        category={category}
-        >
-        </Category>
-        )
-      }
-      
-    </div>
-  )
+  if (unicCategory.length > 4) {
+    const shuffled = unicCategory.sort(() => 0.5 - Math.random());
+
+    let selected = shuffled.slice(0, 4);
+  
+    return (
+      <div className={style.container}>
+        {
+          selected.map((category) => <Category 
+          key={Math.random() * 100} 
+          category={category}
+          >
+          </Category>
+          )
+        }
+      </div>
+    )
+  } else {
+    return (
+      <div className={style.container}>
+        {
+          unicCategory.map((category) => <Category 
+          key={Math.random() * 100} 
+          category={category}
+          >
+          </Category>
+          )
+        }
+      </div>
+    )
+  }
 }
 
 export default Main
