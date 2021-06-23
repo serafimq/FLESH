@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App" >
-      {/* <Router>
+      <Router>
         <Navs />
         <Switch>
           <Route exact path="/login">
@@ -36,11 +36,11 @@ function App() {
             <RickAndMorty />
           </Route>
           <Route exact path="/">
-            <Main />
+            {/* <Main /> */} privet
           </Route>
         </Switch>
-      </Router> */}
-      privet
+
+      </Router>
     </div >
   );
 }
