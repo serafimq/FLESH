@@ -47,7 +47,7 @@ const logoutUser = (user) => async (dispatch) => {
 
 const setActiveAnswer = (answer, questionId, userId) => async (dispatch) => {
 
-  const result = await axios.put('/', {
+  const result = await axios.put('/main', {
     answer,
     questionId,
     userId,

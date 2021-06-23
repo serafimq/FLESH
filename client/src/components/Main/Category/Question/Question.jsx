@@ -40,7 +40,7 @@ const Question = ({quest, buttonLabel,className }) => {
               Вопрос: {quest.question}
               </div>
               <div className="answer">
-                <Input onChange={(x) => value= x.target.value} type="text" name="answer" id="exampleName" placeholder="Ваш ответ" />
+                <Input onChange={(x) => value = x.target.value} type="text" name="answer" id="exampleName" placeholder="Ваш ответ" />
               </div>
 
             </ModalBody>
