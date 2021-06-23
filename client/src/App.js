@@ -36,7 +36,7 @@ function App() {
             <RickAndMorty />
           </Route>
           <Route exact path="/">
-            {/* <Main /> */} privet
+            <Main />
           </Route>
         </Switch>
 
